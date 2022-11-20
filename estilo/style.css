@@ -15,10 +15,13 @@
 }
 
 /*CORPO*/
+head, body {
+    overflow-x: hidden;
+}
 
 body {
     background-color: lightgrey;
-    margin: auto;
+    margin: 0px 0px 0px 0px;
 }
 
 

@@ -8,25 +8,10 @@
     src: url("fontes/idroid.otf") format('opentype');
 }
 
-/* SCREENN SIZE */
-
-@media screen and (max-width: 767px) {
-    
-}
-
-@media screen and (min-width: 1024px ) {
-    
-}
-
-@media screen and (min-width:767 ) and (max-width: 1024px) {
-    
-}
-
 /*CORPO*/
 
 body {
     background-color: lightgrey;
-    margin: auto;
 }
 
 /* hEADER */
@@ -83,7 +68,7 @@ nav {
 
 main {
     background-color: white;
-    max-width: 1050px;
+    max-width: 1024px;
     min-width: 350px;   
     margin-left: auto;
     margin-right: auto;
