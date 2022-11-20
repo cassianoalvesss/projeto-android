@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* FONTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url("fontes/BebasNeue.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url("fontes/idroid.otf") format('opentype');
+}
+
+/*CORPO*/
+
+body {
+    background-color: lightgrey;
+    margin: auto;
+}
+
+
+/* hEADER */
+
+
+header {
+    background-image: linear-gradient(0deg, #063B1D, #2EA665);
+    padding:  10px;
+    width: auto;
+    max-height: 350px;
+    box-shadow: rgb(213, 213, 213) 0px 2px 20px 0px;
+}
+
+    #TituloCabecalho {
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        text-shadow: #00000070 5px 5px 5px;
+        font-size: 70px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        margin-top: 35px;
+}
+
+h2 {    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: #00000070 0px 5px 6px;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left:30px ;
+    padding-right:30px ;
+    margin-bottom: 60px;
+}
+    
+nav {
+    margin: -20px 0px 0px 0px; 
+    font-weight: 400;
+}
+
+    .menu {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        font-size: 17px;
+        color: #84E1AE;
+        border-radius: 8px;
+        transition-duration: .8s;
+    }
+
+    .menu:hover {
+        height: 20px;
+        max-width: 767px ;
+        background-color: #84E1AE;
+        color: #063D1E;
+}
+
+    
+/* MAIN */
+
+
+main {
+    background-color: white;
+    max-width: 1150px;
+    min-width: 320px;   
+    margin: auto;
+    box-shadow: 0px 15px 20px 0px #878787;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* SESSAO 1 */
+
+
+#sessao1 { 
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+    #title1 {
+        color: #063D1E;
+        font-family: 'idroid';
+        font-weight: 300;
+        font-size: 35px;
+}
+
+    #title2{
+        color: #1A5C37;
+        background-image: linear-gradient(90deg, #84E1AE ,#ffffff);
+        max-width: 800px;
+        font-size: 25px;
+        padding: 3px;
+        font-family: 'idroid';
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+span {
+    font-weight: bolder;
+    color: #1A5C37;
+}
+
+.link {
+    font-weight: bolder;
+    color: #063D1E;
+    background-color: #84E1AE;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link::after{
+    content:"\01F517";
+}
+
+
+/*  PICTURE */
+
+
+.imgbig {
+    width: 100%;
+    display: block;
+    margin:auto;
+}
+
+.imglil {
+    margin: auto;
+    display: block;
+}
+
+
+/* SESSAO 2 */
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+div.video {
+    background-color: #063B1D;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* SESSAO 3 */
+
+
+aside {
+    background-color: #83E1AD;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #878787;
+    min-height: 300;
+    min-width: 300;
+}
+
+aside > ul {
+    columns: 2;
+}
+
+h3 {
+    background-color: #063D1E;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+ul {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+.s3 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.port:visited {
+    font-weight: bolder;
+    text-decoration: "none";
+    color: white;
+}
+    
+.social {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+div {
+    width: 250px;
+    height: 150px;
+}
+
+/* RODAPÉ */
+
+
+.s4 {
+    text-align: center;
+    font-size: 17.5px;
+    margin-bottom: 60px;
+    margin-top: -18px;
+    padding-bottom: 35px;
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    background-color: #063B1D;
+}
